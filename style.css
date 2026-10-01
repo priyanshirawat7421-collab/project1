@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 10px;
+
+}
+
+body{
+      font-family: 'poppins',sans-serif;
+      color : var(--primary-text-color);
+
+}
+
+h1{
+    font-size : 3rem;
+}
+ 
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height:1.8rem;
+}
+a{
+     text-decoration: none;
+     display: inline-block;
+
+}
+
+ul{
+    list-style: none;
+}
+  /* utility classes */
+.small-bold-text{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.container{
+     max-width: 1200px; 
+     margin-inline: auto;
+     padding-inline: var(--padding-inline-section);
+    }
+  
+.flex{
+      display: flex;
+      align-items:center;
+}   
+
+.hover-link{
+    color: var(--primary-text-color);
+    transition: 0.1s ease-out;
+}
+
+.hover-link:hover{
+      color: var(--primary-text-color);
+      
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+
+}
+
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+
+}
+
+/* top banner */
+
+.top-banner{
+    background-image: url("./assests/flex.jpg");
+    background-color:#4ac5d0;
+    background: width 100px;
+    background-size:300px;
+    background-repeat: repeat;
+    
+
+}    
+
+.banner-text{
+    color:   white ;
+    padding:  20px 30px;
+    text-align: center;
+}  
+
+/* nav bar */
+.main-nav{
+   /* display: flex; */
+    justify-content: space-between;
+    
+    margin-top: 20px;      /* Pink banner ke bilkul niche */
+}
+
+.company-logo img{
+    width: 160px;         /* 200px se chhota */
+    
+}
+
+.nav-links{
+    flex-basis:830px;
+}
+
+.nav-links ul{
+    
+    justify-content:end;
+    gap:60px;
+    
+}
+
+/*     header section */
+
+ header{
+    padding: 20px var(--padding-inline-section)  0;
+ }
+
+
+.header-section{
+    justify-content: center;
+    gap:100px;
+}
+
+.header-left{
+    max-width: 40vw;
+
+}
+
+.header-left h1{
+    margin-top: 10px;
+}
+
+.get-sarted-btn{
+   margin-top: 30px;
+}
+.header-right img{
+    width: 460px;
+}
+
+/*   companies section */
+
+.companies-header{
+    text-align:center;
+   /* margin-block:20;*/    /*agr margin top or bottom dono jaghh se ek hii number se set krna hai too margin-block use krte hai */
+    color: var(--primary-text-color);
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+} 
+
+.companies-header {
+    font-size: 15px;   /* apne hisaab se 24px, 26px, 30px bhi kar sakti ho */
+    
+}
+
+.logos{
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.logo{
+     height: 60px;
+      
+    }
+
+    /* features-------------- section*/
+    
+.features-section
+{
+  padding : 80px var(--padding-inline-section) 0;
+  background-image:url(./assests/white.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.features-header 
+{
+        text-align:center;
+}
+
+.features-heading-text{
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+.features-area{
+    flex-wrap:wrap;
+    gap: 50px;
+    justify-content: space-between;
+    
+    
+}
+
+.features-card{
+    flex-direction:column;
+    gap: 100px;
+    margin-top: 70px;
+    max-width:30%;
+    text-align: center;
+    
+}
+.features-card h4{
+    margin-bottom: 30px;
+}
+
+.features-card p{
+    margin-bottom: 30px;
+}
+
+.features-card img{
+    margin-bottom: 25px;
+}
+
+/* big features section */
+
+.big-feature-section{
+    padding: 30px var(--padding-inline-section) 0;
+
+}
+.big-feature-container{
+    gap: 30px;
+}
+
+.feature-img img{
+    width: 30%;
+
+}
+
+.feature-desc{
+    flex-direction: column; /*text ko ek ke niche ek laane le liye*/
+    align-items:flex-start;
+}
+.feature-desc h4{
+    margin-bottom: 10px;
+}
+.feature-desc h3{
+    margin-top:10px;
+}
+
+.feature-desc p{
+    margin-top: 20px;
+}
+
+.feature-img img{
+    margin-bottom: 25px;
+    margin-top:25px;
+}
+
+/* examples-----header----------*/
+.examples-header{
+    text-align:center;
+}
+
+.examples-area{
+
+     justify-content: space-between;
+}
+
+.examples-heading-text{
+    margin-bottom:  30px;
+}
+ .examples-header .secondary-button{
+    margin-top:30px;
+    margin-bottom: 70px;
+}
+
+.examples-card{
+    width: 23%;
+    position:relative;
+    min-height:300px;
+    background-color: black;
+    background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)),url(./assests/asset32.jpg);
+    background-size:cover;
+    transition:0.2s ease-out;
+}
+
+.examples-card:hover{
+    box-shadow: 0 0 30px #888;
+
+}
+
+.examples-card:nth-child(3){
+       background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)),url(./assests/asset100.jpg);
+       background-size:cover;
+}
+
+.examples-card:nth-child(4){
+       background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)),url(./assests/asset98.jpg);
+       background-size: cover;
+}
+
+.card-text
+{
+    position: absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    color:white;
+}
+
+/* cta -  section   */
+.cta-section-container{
+    flex-direction: column;/* jb text ko ek k
+    gap:20px;
+    color:white;
+    margin-top:20px;
+}
+
+.cta-section{
+    background-color:#183b56;
+    padding: 80px  var(--padding-inline-section); /*  piche ka background kitna space occupy krta hai */
+    margin-top:40px;
+}
+
+.cta-section-container p{
+    color: white;
+    margin-top:20px;
+    
+}
+
+/*  footer -------section*/
+
+footer{
+     padding-block:40px;
+     background-color:azure;
+}
+
+.link-column{
+    flex-direction:column;
+    align-items:flex-start;
+    gap: 40px;
+    justify-content:space-between;
+}
+.footer-container{
+    align-items:start;
+    justify-content:space-between;
+}
+
+.company-logo{
+    margin-right:40px;
+}
+
+
+.company-logo img{
+    margin-top:2px;
+    width:180px;
+}
+
+/*         sub----------------footer -------------------------------------------------------------------------- section */
+
+.subfooter{
+    background-color: #b9cde4;
+    padding: var(-- padding-inline-section) ;
+    margin-top:40px;
+    padding: 20px;
+}
+
+.subfooter-container{
+    justify-content: center;
+    gap:30px;
+}
