@@ -1,1 +1,1 @@
-# project1
+I developed a UsabilityHub-inspired frontend website using HTML and CSS. The website is designed to showcase user research and usability testing services. I created different sections such as navigation, hero section, company showcase, usability testing features, examples, call-to-action, and footer, focusing on a clean and user-friendly interface.
